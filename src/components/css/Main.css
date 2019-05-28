@@ -1,0 +1,114 @@
+.iosheader {
+    background: #4680C2;
+    width: 100%;
+    height: 20px;
+    height: constant(safe-area-inset-top);
+    height: env(safe-area-inset-top);
+}
+
+.header {
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background: #8AE6BF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header-menu {
+    margin-left: 20.88px;
+    margin-right: 15.25px;
+    color: #009688;
+}
+
+.header-menu img {
+    height: 18.25px;
+    width: 22.88px;
+}
+
+.header-h {
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+    font-family: 'Roboto';
+}
+
+.header-h img {
+    margin-right: 10px;
+}
+
+.overlow {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0.5s linear, opacity 0.5s linear;
+    transition: visibility 0.5s linear, opacity 0.5s linear;
+    z-index: 15;
+    position: fixed;
+    top: calc(45px + 20px);
+    top: calc(45px + constant(safe-area-inset-top));
+    top: calc(45px + env(safe-area-inset-top));
+    width: 100vw;
+    height: calc(100vh - 45px - 20px);
+    height: calc(100vh - 45px - constant(safe-area-inset-top) - constant(safe-area-inset-bottom));
+    height: calc(100vh - 45px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0.5s linear, opacity 0.5s linear;
+    transition: visibility 0.5s linear, opacity 0.5s linear;
+    z-index: 16;
+    position: fixed;
+    top: calc(45px + 20px);
+    top: calc(45px + constant(safe-area-inset-top));
+    top: calc(45px + env(safe-area-inset-top));
+    max-height: calc(100% - 105px);
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(100vw - 10px);
+    background: #FFF;
+    border-radius: 21px;
+    padding-top: 8px;
+    padding-bottom: 31px;
+    overflow-y: auto;
+}
+
+.menu-item {
+    margin: 20px 5px 0 22px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu-item-luna {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item-luna a {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+
+.maincontent {
+    width: 100vw;
+    height: calc(100vh - 45px - 20px);
+    height: calc(100vh - 45px - constant(safe-area-inset-top) - constant(safe-area-inset-bottom));
+    height: calc(100vh - 45px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+}
